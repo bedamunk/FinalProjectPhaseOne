@@ -1,0 +1,78 @@
+Account – Parent to Checking, Gold, and regular
+    accountNumber;
+    dateOpened = new Date();
+    balance;
+   customerNumber;
+    customerName;
+    customerAddress;
+    customerPhone;
+    numOfTransactions;
+    
+no arg constructor    
+full constructor
+Setters    
+    setAcctNum
+    setBal
+    setCustNum
+    setCustName
+    setCustAddy
+   setCustPhone
+Getters  
+    getAcctNum
+    getBal
+     getNumOfTransactions
+     custNum
+      custName
+     custAddy
+     custPhone
+Deposit method
+    makeDeposit
+Withdraw method
+     Makewithdraw
+
+ Checking – child of Accounts
+fees
+No arg constructor
+Constructor with arguments
+Getter 
+	getFee
+withdraw Method for Checking
+makeWithdraw
+toString Method
+Method to calculate Checking fees
+calculateFees
+Method to calculate end of Mont (EOM) numbers for Checking
+calculateEomBalance
+
+ 
+Regular – child of Accounts
+fees = 10.00
+interestRate = .06
+No arg constructor
+Constructor with arguments
+Getter 
+getFee
+Method for withdraw for Regular
+	makeWithdraw
+toString Method
+
+Method to calculate Regular fees
+calculateFees
+Method to calculate end of Mont (EOM) numbers for Regular
+calculateEomBalance
+ 
+Gold – child of Accounts
+interestRate = .05
+No arg constructor
+Constructor with arguments
+Getter 
+getFee
+withdraw Method for Checking
+makeWithdraw
+toString Method
+Method to calculate Checking fees
+calculateFees
+Method to calculate end of Mont (EOM) numbers for Checking
+calculateEomBalance
+
+

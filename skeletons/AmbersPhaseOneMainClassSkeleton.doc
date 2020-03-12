@@ -1,0 +1,94 @@
+Main Class (that uses all of the other classes):  BankManagementSystem
+No constructors
+Array list to hold accounts
+Scanners
+            	Menu choice
+            	Create account
+            	Deposit amount
+            	Withdraw amount
+Methods:
+display menu
+            	Create checking account
+            	Create Regular account
+            	Create Gold Account
+display account info – choose account number
+display End of month (EOM) account info – choose account number
+display total sum for all counts
+display number of zero-balance accounts
+display average account balance
+display account with larges balance
+display total number of transactions
+display all accounts
+display total number of accounts
+ 
+Other Classes:
+ 
+Account – Parent Class
+Instance variables:
+accountNumber
+customerNumber
+customerName
+customerAddress
+dateOpened
+customerPhone
+balance
+withdrawAmount
+depositAmount
+numberOfTransactions
+eomBalance
+ Methods:
+No-arg constructor
+Constructor with arguments
+Setters for all variables except numberOfTransactions and dateOpened and eomBalance
+Getters for all variables
+Withdraw
+
+ 
+deposit
+toString with proper formatting
+calculateEomBalance
+ calculateEomInterest
+ 
+Checking – child of Accounts
+Instance variables:
+fees
+ Methods
+No arg constructor
+Constructor with arguments
+Getter for fees
+withdraw – cannot bring balance negative
+toString with proper formatting
+calculateFees
+calculateEomBalance
+ 
+Regular – child of Accounts
+No arg constructor
+Constructor with arguments
+ Instance variables:
+Fees = 10.00
+interestRate = .06
+ Methods
+Getter for fees
+withdraw – cannot bring balance negative
+ if withdrawAmount > balance
+withdrawAmount = balance
+balance = withdrawAmount-balance
+toString with proper formatting
+calculateEomBalance
+calculateEomInterest
+ 
+Gold – child of Accounts
+Instance variables:
+interestRate = .05
+ 
+Methods
+No arg constructor
+Constructor with arguments
+ Getter for fees
+withdraw – can bring balance negative
+toString with proper formatting
+calculateEomInterest
+calculateEomBalance
+
+ 
+

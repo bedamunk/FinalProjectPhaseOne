@@ -71,9 +71,19 @@ public class Bank {
 		inputString = in.nextLine();
 		newCustomer.setState(inputString);
 		System.out.print("Zip: ");
+		// While loop to catch user input error
+		while (!in.hasNextInt()) {
+			System.out.println("Please enter the zip code using only integers: ");
+			in.next();
+		}
 		inputInt = in.nextInt();
 		newCustomer.setZipCode(inputInt);
 		System.out.print("Phone: ");
+		// While loop to catch user input error
+		while (!in.hasNextInt()) {
+			System.out.println("Please enter the 10 digit phone number including only integers with no special characters: ");
+			in.next();
+		}
 		inputInt = in.nextInt();
 		newCustomer.setPhone(inputInt);
 		System.out.printf("The randomly generated Customer Number is: %d\n", newCustomer.getCustomerID());
